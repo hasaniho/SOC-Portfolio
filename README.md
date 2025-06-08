@@ -7,11 +7,12 @@ Welcome to my SOC Analyst Practice Labs portfolio! This repository showcases my 
 This repository contains write-ups, scripts, and examples of the labs I've completed as part of my ongoing cybersecurity training. The projects include work from platforms like TryHackMe, where I apply real-world SOC skills in simulated environments.
 
 ## 🔍 Key Skills Demonstrated
-- **SIEM Tools**: Splunk, ELK Stack, QRadar
-- **Threat Detection**: Using YARA rules, signature-based detection, and MITRE ATT&CK framework
-- **Log Analysis**: Identifying anomalies in log data to detect potential security threats
-- **Incident Response**: Developing playbooks and responding to simulated security incidents
-- **Scripting**: Python and Bash for automating SOC tasks
+- **Network Traffic Analysis**: PCAP investigation using Wireshark, extracting IOCs, and analyzing protocols (FTP, HTTP, DNS)
+- **SIEM Tools**: Hands-on experience with Splunk, ELK Stack, and QRadar for real-time log correlation and threat detection
+- **Threat Detection**: Utilized YARA rules, signature-based detection, and the MITRE ATT&CK framework to identify attacker TTPs
+- **Log Analysis**: Parsed and interpreted system and application logs to detect anomalies and indicators of compromise
+- **Incident Response**: Built and executed incident response playbooks to triage alerts and respond to simulated security events
+- **Scripting**: Wrote Python and Bash scripts to automate common SOC tasks such as log parsing, alert generation, and data enrichment
 
 ## 📚 Featured Projects
 
