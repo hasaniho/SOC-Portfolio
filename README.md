@@ -18,8 +18,8 @@ Each folder contains real exercises, configurations, detection logic, or notes t
 ---
 
 ## 📁 Portfolio Structure
-```
 This repository is organized by skill area and tool focus:
+```
 SOC-Portfolio/
 ├── README.md
 ├── traffic-analysis/
