@@ -1,21 +1,24 @@
-# SOC Analyst Practice Labs
+# 🛡️ SOC Analyst Portfolio – Hasani
 
-Welcome to my SOC Analyst Practice Labs portfolio! This repository showcases my hands-on experience and projects related to Security Operations Center (SOC) work, focusing on skills like log analysis, threat detection, incident response, and using various SIEM tools.
+Welcome to my SOC Analyst portfolio. This repository showcases hands-on cybersecurity labs and projects completed through platforms like TryHackMe, focused on network traffic analysis, SIEM tools, threat detection, and incident response.
 
-## 📁 Repository Overview
+Each folder contains real exercises, configurations, detection logic, or notes that demonstrate practical use of the tools a Security Analyst relies on in the field. This is a living repo that will grow as I continue to develop my skills and pursue a career in blue team cybersecurity.
 
-This repository contains write-ups, scripts, and examples of the labs I've completed as part of my ongoing cybersecurity training. The projects include work from platforms like TryHackMe, where I apply real-world SOC skills in simulated environments.
+---
 
 ## 🔍 Key Skills Demonstrated
-- **Network Traffic Analysis**: PCAP investigation using Wireshark, extracting IOCs, and analyzing protocols (FTP, HTTP, DNS)
-- **SIEM Tools**: Hands-on experience with Splunk, ELK Stack, and QRadar for real-time log correlation and threat detection
+
+- **Network Traffic Analysis**: Investigated PCAPs using Wireshark to identify suspicious activity, extract IOCs, and analyze protocols (FTP, HTTP, DNS)
+- **SIEM Tools**: Hands-on experience with Splunk (labs to be uploaded), ELK Stack, and QRadar for real-time log correlation and threat detection
 - **Threat Detection**: Utilized YARA rules, signature-based detection, and the MITRE ATT&CK framework to identify attacker TTPs
 - **Log Analysis**: Parsed and interpreted system and application logs to detect anomalies and indicators of compromise
 - **Incident Response**: Built and executed incident response playbooks to triage alerts and respond to simulated security events
 - **Scripting**: Wrote Python and Bash scripts to automate common SOC tasks such as log parsing, alert generation, and data enrichment
 
-## 📁 Portfolio Structure
+---
 
+## 📁 Portfolio Structure
+```
 This repository is organized by skill area and tool focus:
 SOC-Portfolio/
 ├── README.md
@@ -33,23 +36,13 @@ SOC-Portfolio/
 ├── capstones/
 │   ├── incident-simulation-1/
 │   └── detection-engineering-task/
-
-## 📚 Featured Projects
-
-### 1. [YARA Rules Lab](./YARA-Rules/YARA-Rules.md)
-Developed custom YARA rules to detect malware within a simulated environment. Demonstrated skills in threat detection and signature-based analysis.
-
-### 2. [Splunk Log Analysis](./Splunk-Log-Analysis/Splunk-Log-Analysis.md)
-Used Splunk to analyze system logs and detect unauthorized access patterns. Created search queries and dashboards for monitoring network activity.
-
-### 3. [Incident Response Simulation](./Incident-Response/Incident-Response.md)
-Responded to a simulated phishing attack scenario. Developed a step-by-step playbook to handle the incident, showcasing strong analytical and response skills.
-
+```
 ## 📂 How to Navigate
 - **Each project folder** contains a write-up (`.md` file) that details the scenario, tools used, steps taken, and outcomes.
 - **Scripts and configurations** are included where relevant to show the practical implementation of skills.
 
 ## 🌐 Connect with Me
+If you're a recruiter, SOC team lead, or someone in the field — feel free to connect or reach out. I'm actively pursuing entry-level SOC opportunities and training full-time.
 - **[LinkedIn](https://linkedin.com/in/hasani-houston-431b13121)**
 - **[Resume](link-to-resume)**
 
