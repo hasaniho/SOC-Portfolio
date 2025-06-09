@@ -14,6 +14,26 @@ This repository contains write-ups, scripts, and examples of the labs I've compl
 - **Incident Response**: Built and executed incident response playbooks to triage alerts and respond to simulated security events
 - **Scripting**: Wrote Python and Bash scripts to automate common SOC tasks such as log parsing, alert generation, and data enrichment
 
+## 📁 Portfolio Structure
+
+This repository is organized by skill area and tool focus:
+SOC-Portfolio/
+├── README.md
+├── traffic-analysis/
+│   └── wireshark-traffic-analysis/
+│       ├── README.md
+│       └── notes.md
+├── threat-intelligence/
+│   └── yara-rules-lab/
+│       ├── README.md
+│       └── rules.yar
+├── siem-tools/
+│   ├── splunk-lab/
+│   └── elk-lab/
+├── capstones/
+│   ├── incident-simulation-1/
+│   └── detection-engineering-task/
+
 ## 📚 Featured Projects
 
 ### 1. [YARA Rules Lab](./YARA-Rules/YARA-Rules.md)
