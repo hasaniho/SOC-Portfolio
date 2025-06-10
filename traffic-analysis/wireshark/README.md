@@ -13,3 +13,18 @@ This lab, from the TryHackMe **"Wireshark: Traffic Analysis"** room, focused on 
 ```wireshark
 dns.qry.name.len > 15 and !mdns
 
+
+---
+
+### 🧰 Tool Overview
+Brief explanation of what this tool does and why it's used in cybersecurity or SOC environments.
+
+---
+
+### 🧪 Use Case / Lab Example  
+Describe a specific thing you did with the tool in this lab. Include commands, filters, artifacts, and/or a screenshot (if possible).
+
+---
+
+### 🎯 Value / Takeaway  
+What did you learn? How could this be applied in a real SOC environment?
