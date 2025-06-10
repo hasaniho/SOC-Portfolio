@@ -20,22 +20,25 @@ Each folder contains real exercises, configurations, detection logic, or notes t
 ## 📁 Portfolio Structure
 This repository is organized by skill area and tool focus:
 ```
-SOC-Portfolio/
+soc-portfolio/
 ├── README.md
+├── cyber-threat-intel/
+│   ├── README.md
+│   └── osint-tools/
+│       └── .keep
 ├── traffic-analysis/
-│   └── wireshark-traffic-analysis/
-│       ├── README.md
-│       └── notes.md
-├── threat-intelligence/
-│   └── yara-rules-lab/
-│       ├── README.md
-│       └── rules.yar
+│   ├── README.md
+│   ├── wireshark/
+│   │   ├── README.md
+│   │   └── .keep
+│   └── snort/
+│       └── .keep
 ├── siem-tools/
-│   ├── splunk-lab/
-│   └── elk-lab/
-├── capstones/
-│   ├── incident-simulation-1/
-│   └── detection-engineering-task/
+│   ├── README.md
+│   ├── splunk/
+│   │   └── .keep
+│   └── elk-stack/
+│       └── .keep
 ```
 ## 📂 How to Navigate
 - **Each project folder** contains a write-up (`.md` file) that details the scenario, tools used, steps taken, and outcomes.
