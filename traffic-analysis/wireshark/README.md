@@ -1,12 +1,15 @@
 # Wireshark Traffic Analysis Lab
 
-TryHackMe Lab: Wireshark Traffic Analysis  
-Skills practiced: Packet capture analysis, DNS filtering, HTTP method inspection, FTP command tracking.
+## 🔍 Overview
+This lab, from the TryHackMe **"Wireshark: Traffic Analysis"** room, focused on using Wireshark to examine network traffic and identify signs of suspicious activity. It served as an introduction to traffic analysis techniques used in Security Operations Centers (SOCs).
 
-## Summary
-This lab focused on analyzing PCAP files using Wireshark to extract intelligence on DNS queries, HTTP traffic, and FTP activity.
+## 🛠️ Tools Used
+- **Wireshark** (graphical packet analysis tool)
+- **PCAP files** provided by TryHackMe
 
-## Key Filters Used
-- `dns.qry.name.len > 15 and !mdns`
-- `ftp.request.command and ftp.request.arg and ftp.response.code`
-- `http.request.method == "POST"`
+## 🔑 Key Filters & What They Reveal
+
+### 📌 DNS Analysis
+```wireshark
+dns.qry.name.len > 15 and !mdns
+
