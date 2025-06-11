@@ -1,64 +1,27 @@
-# 🕵️ Wireshark: Carnage – Traffic Analysis Challenge
+# 🕵️‍♂️ Carnage - Wireshark Traffic Analysis Lab
 
-## 🔧 Tool Overview
-**Wireshark** is a network protocol analyzer used to inspect packet-level data from network traffic. It's widely used in cybersecurity for tasks like threat hunting, incident response, and malware analysis.
+## Overview
+This lab simulates a real-world security incident where a user from Bartell Ltd’s Purchasing Department receives a malicious email attachment. After enabling macros in a Word document, their system initiates suspicious outbound connections. As an analyst, I used Wireshark to examine the provided `.pcap` file and answer a set of investigative questions.
 
-In this challenge, I used Wireshark to investigate a suspicious `.pcap` file and answer questions based on observed network activity.
+## 🛠 Tools Used
+- **Wireshark** – for deep packet inspection and protocol analysis
+- **VirusTotal** – to confirm indicators of compromise (IOCs)
+- **MITRE ATT&CK Framework** – to understand Cobalt Strike behavior and communication patterns
+- **OSINT Tools** (Community Threat Intelligence)
 
----
+## 🎯 Techniques Used
+- **Follow TCP/HTTP Streams**: Helped reconstruct communication between the victim and external hosts.
+- **Time-Based Packet Sorting**: Rearranged packets chronologically to identify the first HTTP connection.
+- **Statistics → Conversations**: Used to highlight the most active IPs and detect possible C2 servers.
+- **Custom Columns**: Added `tls.handshake.extensions_server_name` to identify malicious domains over TLS.
+- **Advanced Filtering**:
+  ```wireshark
+  (tcp.port == 443 or tcp.port == 80 or tcp.port == 8080) and tls.handshake.extensions_server_name != ""
 
-## 📂 Challenge Overview
-- **Platform:** TryHackMe
-- **Room:** [Carnage](https://tryhackme.com/room/carnage)
-- **Difficulty:** Easy/Medium
-- **Focus Areas:** Packet inspection, filtering, extracting IoCs, protocol analysis
-
----
-
-## 🧠 Skills Practiced
-- Creating and applying display filters
-- Identifying file downloads via HTTP
-- Extracting command-and-control (C2) indicators
-- DNS query analysis
-- Reconstructing file types from TCP streams
-
----
-
-## 🔍 Key Filters & Syntax Used
-Below are examples of display filters and techniques used to answer the challenge questions:
-
-```bash
-# Find all HTTP requests
+## 🧠 Key Filters and Commands Used
 http.request
-
-# Filter by IP address
-ip.addr == 192.168.56.101
-
-# Identify DNS queries
-dns.qry.name
-
-# Extract TCP stream for file download
-tcp.stream eq 2# Carnage – Wireshark Traffic Analysis Challenge
-
-## 🧠 Overview
-This TryHackMe lab focused on analyzing malicious traffic using Wireshark. I reviewed a PCAP file to identify suspicious behavior, attacker IPs, and compromised credentials.
-
-## 🛠️ Skills & Tools Used
-- Wireshark (filtering, export objects, following TCP streams)
-- PCAP analysis
-- Basic malware behavior analysis
-
-## 🎯 Objectives
-- Identify malicious IPs and compromised hosts
-- Follow network traffic to detect C2 behavior
-- Extract credentials from traffic
-
-## 📌 Key Takeaways
-- Used filters like `http.request`, `ftp`, `ip.addr == x.x.x.x`
-- Extracted data via "Follow TCP Stream" and "Export Objects"
-- Discovered credentials via cleartext FTP traffic
-
-## 📁 Files
-- `carnage_notes.md`: My step-by-step analysis
-- Screenshots of evidence
-
+tcp.stream eq [n]
+tcp.port == 443 || tcp.port == 80 || tcp.port == 8080
+tls.handshake.extensions_server_name != ""
+frame.time
+ip.addr == [suspicious IP]
