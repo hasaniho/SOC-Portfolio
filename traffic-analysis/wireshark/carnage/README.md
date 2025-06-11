@@ -61,13 +61,26 @@ smtp contains "MAIL FROM"
 ---
 
 ## 📊 Summary of Findings
+	•	🕸️ Malicious Domains:
+	•	finejewels.com.au
+	•	thietbiagt.com
+	•	new.americold.com
+	•	api.ipify.org (used for IP discovery)
+Discovered via high-traffic TCP conversations and by inspecting Server Name Indication (SNI) fields in TLS handshakes.
+	•	🎯 Cobalt Strike C2 Servers:
+	•	IPs identified by filtering HTTP traffic on ports 80/8080, then confirmed using VirusTotal’s Community tab.
+	•	Verified based on behavior consistent with Cobalt Strike per MITRE ATT&CK framework.
+	•	📨 Suspicious Email Activity:
+	•	SMTP traffic observed between the infected host and farshin@mailfa.com.
+	•	Used smtp.req.command and smtp.req.argument columns to extract MAIL FROM and RCPT TO fields for deeper analysis.
 
-- **Malicious Domains**: 
-  - `finejewels.com.au`
-  - `api.ipify.org`
-  - `thietbiagt.com`
-  - `new.americold.com`
-  → Identified by analyzing high-volume TCP conversations and inspecting SNI fields in TLS handshake packets
-- **Suspicious Email Activity**: 
-  - Detected SMTP traffic to `farshin@mailfa.com`
-  - Used column customization to add `smtp.req.command` and `smtp.req.argument` fields for easier analysis
+⸻
+
+## 📝 Notes
+
+This lab showcased how to:
+	•	Apply Wireshark display filters effectively
+	•	Correlate packet data with open-source intelligence
+	•	Identify malware behavior like C2 communications and malspam
+  •	Apply similar triage approach to future PCAP-based labs
+	•	Think like a SOC analyst during an early-stage incident
