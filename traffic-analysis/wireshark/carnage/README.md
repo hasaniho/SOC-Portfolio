@@ -2,7 +2,7 @@
 
 ## 📁 Overview
 
-This TryHackMe challenge simulates a real-world malware infection scenario. A user at Bartell Ltd downloaded a malicious Word doc and enabled macros, triggering suspicious outbound connections. I was tasked with analyzing the `.pcap` file to uncover the attack timeline, malicious domains, and C2 infrastructure. [**Carnage**] (https://tryhackme.com/room/c2carnage)
+This TryHackMe challenge simulates a real-world malware infection scenario. A user at Bartell Ltd downloaded a malicious Word doc and enabled macros, triggering suspicious outbound connections. I was tasked with analyzing the `.pcap` file to uncover the attack timeline, malicious domains, and C2 infrastructure. 
 
 ## 🧠 Objective
 
@@ -13,6 +13,7 @@ Analyze the PCAP file using Wireshark to:
 - Practice OSINT + packet filtering techniques
 - Observe SMTP traffic to detect malspam
 
+- **Room:** [Carnage](https://tryhackme.com/room/carnage)
 ---
 
 ## 🛠️ Tools & Techniques Used
