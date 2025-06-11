@@ -11,6 +11,7 @@ Analyze the PCAP file using Wireshark to:
 - Extract domains and IPs involved in malicious activity
 - Detect Cobalt Strike C2 infrastructure
 - Practice OSINT + packet filtering techniques
+- Observe SMTP traffic to detect malspam
 
 ---
 
@@ -44,8 +45,14 @@ dns.qry.name
 # Filter by specific IP
 ip.addr == x.x.x.x
 
+# Filter by domain name
+Applied servername extension as a column
+
 # Filter for TLS handshakes and extract domains
 tcp.port == 443 && tls.handshake.extensions_server_name
 
 # Combined port + TLS filter
 (tcp.port == 443 or tcp.port == 80 or tcp.port == 8080) && tls.handshake.extensions_server_name != ""
+
+# Detect malspam
+smtp contains "MAIL FROM" 
