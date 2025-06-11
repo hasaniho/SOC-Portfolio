@@ -18,8 +18,8 @@ Analyze the PCAP file using Wireshark to:
 ## 🛠️ Tools & Techniques Used
 
 - **Wireshark**: for inspecting packets, following TCP/HTTP streams, analyzing conversations, and filtering protocols
-- **VirusTotal**: confirmed malicious IPs associated with Cobalt Strike (via Community tab)
-- **MITRE ATT&CK**: used to research typical Cobalt Strike behavior and ports (80/8080)
+- [**VirusTotal**](https://virustotal.com): confirmed malicious IPs associated with Cobalt Strike (via Community tab)
+- [**MITRE ATT&CK**](https://attack.mitre.org/): used to research typical Cobalt Strike behavior and ports (80/8080)
 - **CanaryTokens** & **IPVoid** (not used in this lab, but relevant tools in similar investigations)
 
 ---
@@ -55,4 +55,18 @@ tcp.port == 443 && tls.handshake.extensions_server_name
 (tcp.port == 443 or tcp.port == 80 or tcp.port == 8080) && tls.handshake.extensions_server_name != ""
 
 # Detect malspam
-smtp contains "MAIL FROM" 
+smtp contains "MAIL FROM"
+```
+---
+
+## 📊 Summary of Findings
+
+- **Malicious Domains**: 
+  - `finejewels.com.au`
+  - `api.ipify.org`
+  - `thietbiagt.com`
+  - `new.americold.com`
+  → Identified by analyzing high-volume TCP conversations and inspecting SNI fields in TLS handshake packets
+- **Suspicious Email Activity**: 
+  - Detected SMTP traffic to `farshin@mailfa.com`
+  - Used column customization to add `smtp.req.command` and `smtp.req.argument` fields for easier analysis
