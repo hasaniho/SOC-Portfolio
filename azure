@@ -1,0 +1,28 @@
+# Azure Honeypot + Microsoft Sentinel SIEM Lab
+
+## 📌 Overview
+This project demonstrates a full end-to-end cloud SOC setup using:
+- Microsoft Azure
+- Windows 10 VM Honeypot
+- Log Analytics Workspace (LAW)
+- Azure Monitor Agent (AMA)
+- Microsoft Sentinel SIEM
+- Kusto Query Language (KQL)
+- Geo-IP enrichment via Sentinel Watchlists
+- Custom Attack Map Workbook
+
+## 📁 Architecture Diagram
+VM → AMA → Log Analytics Workspace → Sentinel → Workbook
+
+## 🧩 Part 1: Azure VM Honeypot
+- Created Windows 10 VM
+- Allowed all inbound traffic
+- Disabled Windows Firewall
+- Generated failed login events (Event ID 4625)
+
+## 🧩 Part 2: Log Analytics workspace
+- Created LAW
+- Connected the VM
+- Verified logs using KQL
+
+Example Query:
