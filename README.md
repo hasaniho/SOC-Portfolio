@@ -34,9 +34,28 @@ This repository is organized by skill area and tool focus:
 ```
 soc-portfolio/
 ├── README.md
-├── cyber-threat-intel/
+├── cloud-platforms/
 │   ├── README.md
-│   └── osint-tools/
+│   ├── azure/
+│   │   ├── README.md
+│   │   └── microsoft-sentinel/
+│   │       ├── README.md
+│   │       ├── lab-01-windows-security-events/
+│   │       │   ├── README.md
+│   │       │   └── screenshots/
+│   │       └── lab-02-ueba-analysis/        ← future
+│   │           ├── README.md
+│   │           └── screenshots/
+│   └── aws/
+│       ├── README.md
+│       └── security-labs/                   ← future
+│           └── .keep
+├── on-prem-siem-tools/
+│   ├── README.md
+│   ├── splunk/
+│   │   ├── README.md
+│   │   └── .keep
+│   └── elk-stack/
 │       └── .keep
 ├── traffic-analysis/
 │   ├── README.md
@@ -45,14 +64,9 @@ soc-portfolio/
 │   │   └── .keep
 │   └── snort/
 │       └── .keep
-├── siem-tools/
+├── cyber-threat-intel/
 │   ├── README.md
-│   ├── microsoft-sentinel/
-│   │   ├── README.md
-│   │   └── screenshots/
-│   ├── splunk/
-│   │   └── .keep
-│   └── elk-stack/
+│   └── osint-tools/
 │       └── .keep
 ```
 
