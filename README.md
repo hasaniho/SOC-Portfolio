@@ -1,52 +1,38 @@
-🛡️ SOC Analyst Portfolio — Hasani
+# 🛡️ SOC Analyst Portfolio (_hasaniho_)
 
-Welcome to my SOC Analyst portfolio. This repository showcases hands-on cybersecurity labs and projects focused on blue team operations, including SIEM configuration, log analysis, threat detection, and incident investigation.
+Welcome to my SOC Analyst portfolio! This repository showcases hands-on cybersecurity labs and projects focused on blue team operations, including network traffic analysis, SIEM tools, threat detection, and incident response.
 
-The projects here are built through platforms such as TryHackMe and self-directed cloud labs. Each folder contains real configurations, queries, detections, or analysis notes that demonstrate how I approach security monitoring and incident response in a SOC environment. This is a living repository that will continue to grow as I deepen my skills and pursue an entry-level SOC role.
+The projects in this repository were completed through platforms such as **TryHackMe** and independent cloud security labs. Each folder contains real exercises, configurations, detection logic, queries, or notes that demonstrate practical use of the tools a Security Analyst relies on in the field. This is a living repository that will continue to grow as I develop my skills and pursue an entry-level SOC role.
 
-⸻
+---
 
-🔍 Core Skills Demonstrated
-	•	SIEM & Log Analysis
-	•	Hands-on experience with Microsoft Sentinel, Splunk (labs in progress), ELK Stack, and QRadar
-	•	Ingested and queried logs from endpoints and cloud resources using KQL
-	•	Built detections and validated log pipelines using real security telemetry
-	•	Threat Detection & Investigation
-	•	Analyzed Windows Security Events (e.g., failed logons, authentication activity)
-	•	Used MITRE ATT&CK to contextualize attacker techniques and behaviors
-	•	Created and tested YARA rules for file and malware detection
-	•	Network Traffic Analysis
-	•	Investigated PCAP files using Wireshark
-	•	Identified suspicious activity across common protocols (HTTP, DNS, FTP)
-	•	Extracted indicators of compromise (IOCs)
-	•	Incident Response Fundamentals
-	•	Followed structured investigation workflows to triage alerts
-	•	Correlated logs, enriched data, and documented findings
-	•	Practiced alert validation and response decision-making in lab environments
-	•	Scripting & Automation (Foundational)
-	•	Used Python and Bash for basic automation tasks such as log parsing and data enrichment
-	•	Focused on SOC-relevant scripting use cases
+## 🔍 Key Skills Demonstrated
 
-⸻
+- **Network Traffic Analysis**  
+  Investigated PCAPs using **Wireshark** to identify suspicious activity, extract IOCs, and analyze common protocols (HTTP, DNS, FTP).
 
-🧪 Featured Project
+- **SIEM Tools & Log Analysis**  
+  Hands-on experience with **Microsoft Sentinel**, **Log Analytics Workspace (LAW)**, **Splunk**, **ELK Stack**, and **QRadar** for log ingestion, correlation, and threat detection.
 
-Microsoft Sentinel SOC Homelab
-	•	Deployed a Windows VM in Azure and intentionally exposed it to simulate attack traffic
-	•	Configured Log Analytics Workspace (LAW) and onboarded Microsoft Sentinel
-	•	Installed and configured Azure Monitor Agent (AMA) with Data Collection Rules (DCRs)
-	•	Ingested Windows Security Events and validated data flow using KQL
-	•	Analyzed failed logon attempts (Event ID 4625) and enriched logs with GeoIP data
-	•	Built a Sentinel workbook to visualize global attack activity
+- **Threat Detection**  
+  Utilized **YARA rules**, signature-based detection, and the **MITRE ATT&CK** framework to identify attacker tactics, techniques, and procedures (TTPs).
 
-➡️ See: siem-tools/microsoft-sentinel/
+- **Incident Response**  
+  Practiced alert triage, investigation workflows, and incident response fundamentals using simulated security events and real log data.
 
-⸻
+- **Cloud Security (Azure)**  
+  Deployed and secured Azure resources, onboarded Windows VMs into Microsoft Sentinel, configured **Azure Monitor Agent (AMA)** and **Data Collection Rules (DCRs)**, and analyzed **Windows Security Events** using **KQL**.
 
-📁 Repository Structure
+- **Scripting & Automation (Foundational)**  
+  Used **Python** and **Bash** to support SOC workflows such as log parsing, alert enrichment, and basic automation tasks.
 
-This repository is organized by tool and skill focus:
-SOC-Portfolio/
+---
+
+## 📁 Portfolio Structure
+
+This repository is organized by skill area and tool focus:
+```
+soc-portfolio/
 ├── README.md
 ├── cyber-threat-intel/
 │   ├── README.md
@@ -68,26 +54,29 @@ SOC-Portfolio/
 │   │   └── .keep
 │   └── elk-stack/
 │       └── .keep
+```
 
-⸻
+---
 
-📂 How to Navigate
-	•	Each project folder contains a README explaining:
-	•	The scenario or lab objective
-	•	Tools used
-	•	Key steps taken
-	•	Findings and outcomes
-	•	Relevant queries, configurations, and screenshots are included where appropriate to show practical implementation.
+## 📂 How to Navigate
 
-⸻
+- Each project folder contains a **README (.md)** that explains:
+  - The scenario or lab objective  
+  - Tools used  
+  - Steps taken  
+  - Findings and outcomes  
 
-🌐 Connect With Me
+- Relevant **queries, configurations, and screenshots** are included where applicable to demonstrate hands-on implementation.
 
-I’m actively pursuing entry-level SOC / Security Analyst roles and continuing to train hands-on.
-	•	LinkedIn: https://linkedin.com/in/hasani-houston-431b13121
-	•	Resume: (link coming soon)
+---
 
-Thanks for checking out my portfolio — feel free to explore the projects or reach out with feedback.
-📁 Repository Structure
+## 🌐 Connect With Me
 
-This repository is organized by tool and skill focus:
+If you're a recruiter, SOC team lead, or cybersecurity professional — feel free to connect or reach out. I’m actively pursuing **entry-level SOC / Security Analyst roles** and training full-time.
+
+- **LinkedIn:** https://linkedin.com/in/hasani-houston-431b13121  
+- **Resume:** 
+
+---
+
+Thank you for visiting my portfolio! Feel free to explore the projects and reach out if you have any questions or feedback.
