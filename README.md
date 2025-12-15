@@ -1,26 +1,52 @@
-# 🛡️ SOC Analyst Portfolio – Hasani
+🛡️ SOC Analyst Portfolio — Hasani
 
-Welcome to my SOC Analyst portfolio. This repository showcases hands-on cybersecurity labs and projects completed through platforms like TryHackMe, focused on network traffic analysis, SIEM tools, threat detection, and incident response.
+Welcome to my SOC Analyst portfolio. This repository showcases hands-on cybersecurity labs and projects focused on blue team operations, including SIEM configuration, log analysis, threat detection, and incident investigation.
 
-Each folder contains real exercises, configurations, detection logic, or notes that demonstrate practical use of the tools a Security Analyst relies on in the field. This is a living repo that will grow as I continue to develop my skills and pursue a career in blue team cybersecurity.
+The projects here are built through platforms such as TryHackMe and self-directed cloud labs. Each folder contains real configurations, queries, detections, or analysis notes that demonstrate how I approach security monitoring and incident response in a SOC environment. This is a living repository that will continue to grow as I deepen my skills and pursue an entry-level SOC role.
 
----
+⸻
 
-## 🔍 Key Skills Demonstrated
+🔍 Core Skills Demonstrated
+	•	SIEM & Log Analysis
+	•	Hands-on experience with Microsoft Sentinel, Splunk (labs in progress), ELK Stack, and QRadar
+	•	Ingested and queried logs from endpoints and cloud resources using KQL
+	•	Built detections and validated log pipelines using real security telemetry
+	•	Threat Detection & Investigation
+	•	Analyzed Windows Security Events (e.g., failed logons, authentication activity)
+	•	Used MITRE ATT&CK to contextualize attacker techniques and behaviors
+	•	Created and tested YARA rules for file and malware detection
+	•	Network Traffic Analysis
+	•	Investigated PCAP files using Wireshark
+	•	Identified suspicious activity across common protocols (HTTP, DNS, FTP)
+	•	Extracted indicators of compromise (IOCs)
+	•	Incident Response Fundamentals
+	•	Followed structured investigation workflows to triage alerts
+	•	Correlated logs, enriched data, and documented findings
+	•	Practiced alert validation and response decision-making in lab environments
+	•	Scripting & Automation (Foundational)
+	•	Used Python and Bash for basic automation tasks such as log parsing and data enrichment
+	•	Focused on SOC-relevant scripting use cases
 
-- **Network Traffic Analysis**: Investigated PCAPs using Wireshark to identify suspicious activity, extract IOCs, and analyze protocols (FTP, HTTP, DNS)
-- **SIEM Tools**: Hands-on experience with Splunk (labs to be uploaded), ELK Stack, and QRadar for real-time log correlation and threat detection
-- **Threat Detection**: Utilized YARA rules, signature-based detection, and the MITRE ATT&CK framework to identify attacker TTPs
-- **Log Analysis**: Parsed and interpreted system and application logs to detect anomalies and indicators of compromise
-- **Incident Response**: Built and executed incident response playbooks to triage alerts and respond to simulated security events
-- **Scripting**: Wrote Python and Bash scripts to automate common SOC tasks such as log parsing, alert generation, and data enrichment
+⸻
 
----
+🧪 Featured Project
 
-## 📁 Portfolio Structure
-This repository is organized by skill area and tool focus:
-```
-soc-portfolio/
+Microsoft Sentinel SOC Homelab
+	•	Deployed a Windows VM in Azure and intentionally exposed it to simulate attack traffic
+	•	Configured Log Analytics Workspace (LAW) and onboarded Microsoft Sentinel
+	•	Installed and configured Azure Monitor Agent (AMA) with Data Collection Rules (DCRs)
+	•	Ingested Windows Security Events and validated data flow using KQL
+	•	Analyzed failed logon attempts (Event ID 4625) and enriched logs with GeoIP data
+	•	Built a Sentinel workbook to visualize global attack activity
+
+➡️ See: siem-tools/microsoft-sentinel/
+
+⸻
+
+📁 Repository Structure
+
+This repository is organized by tool and skill focus:
+SOC-Portfolio/
 ├── README.md
 ├── cyber-threat-intel/
 │   ├── README.md
@@ -35,18 +61,33 @@ soc-portfolio/
 │       └── .keep
 ├── siem-tools/
 │   ├── README.md
+│   ├── microsoft-sentinel/
+│   │   ├── README.md
+│   │   └── screenshots/
 │   ├── splunk/
 │   │   └── .keep
 │   └── elk-stack/
 │       └── .keep
-```
-## 📂 How to Navigate
-- **Each project folder** contains a write-up (`.md` file) that details the scenario, tools used, steps taken, and outcomes.
-- **Scripts and configurations** are included where relevant to show the practical implementation of skills.
 
-## 🌐 Connect with Me
-If you're a recruiter, SOC team lead, or someone in the field — feel free to connect or reach out. I'm actively pursuing entry-level SOC opportunities and training full-time.
-- **[LinkedIn](https://linkedin.com/in/hasani-houston-431b13121)**
-- **[Resume](link-to-resume)**
+⸻
 
-Thank you for visiting my portfolio! Feel free to explore the projects and reach out if you have any questions or feedback.
+📂 How to Navigate
+	•	Each project folder contains a README explaining:
+	•	The scenario or lab objective
+	•	Tools used
+	•	Key steps taken
+	•	Findings and outcomes
+	•	Relevant queries, configurations, and screenshots are included where appropriate to show practical implementation.
+
+⸻
+
+🌐 Connect With Me
+
+I’m actively pursuing entry-level SOC / Security Analyst roles and continuing to train hands-on.
+	•	LinkedIn: https://linkedin.com/in/hasani-houston-431b13121
+	•	Resume: (link coming soon)
+
+Thanks for checking out my portfolio — feel free to explore the projects or reach out with feedback.
+📁 Repository Structure
+
+This repository is organized by tool and skill focus:
